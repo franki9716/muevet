@@ -5,9 +5,11 @@ Página de aterrizaje para promocionar y descargar MueveT.
 ## Cómo publicar en internet
 
 1. **Sube la carpeta `landing`** a tu hosting (Netlify, Vercel, GitHub Pages, o cualquier servidor con HTML estático).
-2. **Enlace de descarga:** Por defecto el botón apunta a `MueveT.exe` en la misma ruta que `index.html`. Opciones:
-   - Subir `MueveT.exe` junto a la web (mismo dominio).
-   - Usar un enlace externo: por ejemplo subir el .exe a [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) o a Google Drive / OneDrive y cambiar el `href` del botón en `index.html` a esa URL.
+2. **Descarga del .exe:** El botón apunta a **GitHub Releases**. Para que funcione:
+   - Ve al repo → **Releases** → **Create a new release**.
+   - Etiqueta ej. `v1.0.0`, título ej. "MueveT v1.0.0".
+   - Arrastra o sube **MueveT.exe** (el generado con PyInstaller desde la raíz del proyecto).
+   - Publica el release. La URL `https://github.com/franki9716/muevet/releases/latest/download/MueveT.exe` servirá el .exe y la descarga será estable (sin límite de tamaño del repo).
 
 ## Monetización con publicidad
 
@@ -43,4 +45,4 @@ El CSS ya está pensado para que, cuando haya un `<ins>` o `<iframe>` dentro de 
 - `script.js` — Scroll suave para enlaces internos.
 - `README.md` — Este archivo.
 
-Si quieres que el .exe se descargue desde la misma web, copia `dist/MueveT.exe` dentro de la carpeta `landing` y déjalo como está el enlace. Si no, cambia el `href` del botón “Descargar MueveT.exe” en `index.html` a la URL donde tengas alojado el ejecutable.
+No subas el .exe al repo (está en `.gitignore`). Súbelo solo en un Release. Antes: copia `dist/MueveT.exe` dentro de la carpeta `landing` y déjalo como está el enlace. Si no, cambia el `href` del botón “Descargar MueveT.exe” en `index.html` a la URL donde tengas alojado el ejecutable.
