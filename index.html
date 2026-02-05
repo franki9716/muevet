@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MueveT — Recordatorio de salud laboral para tu PC</title>
-  <meta name="description" content="App de escritorio que te recuerda hacer pausas y ejercicios durante la jornada. Gratis para Windows.">
+  <meta name="description" content="App de escritorio que te recuerda hacer pausas y ejercicios durante la jornada. Gratis para Windows. Español, English, 中文.">
+  <link rel="canonical" href="https://muevet.app/">
+  <link rel="alternate" hreflang="es" href="https://muevet.app/">
+  <link rel="alternate" hreflang="en" href="https://muevet.app/en/">
+  <link rel="alternate" hreflang="zh" href="https://muevet.app/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://muevet.app/">
+  <meta property="og:title" content="MueveT — Recordatorio de salud laboral">
+  <meta property="og:description" content="App de escritorio para pausas y ejercicios en la jornada. Gratis para Windows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://muevet.app/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
     <div class="wrap">
-      <a href="#" class="logo">MueveT</a>
+      <a href="index.html" class="logo">MueveT</a>
       <nav class="nav">
+        <span class="lang-switcher">
+          <a href="index.html" hreflang="es" class="active">ES</a>
+          <a href="en/" hreflang="en">EN</a>
+          <a href="zh/" hreflang="zh">中文</a>
+        </span>
         <a href="#caracteristicas">Características</a>
         <a href="#descargar">Descargar</a>
       </nav>
@@ -30,11 +44,8 @@
       </div>
     </section>
 
-    <!-- Zona de publicidad: puedes pegar aquí el código de Google AdSense u otro proveedor -->
     <aside class="ad-slot" aria-label="Publicidad">
       <div class="ad-inner">
-        <!-- Ejemplo: inserta aquí tu bloque de AdSense o otro script de anuncios -->
-        <!-- <script async src="https://pagead2.googlesyndication.com/..."></script> -->
         <p class="ad-placeholder">Espacio publicitario</p>
       </div>
     </aside>
@@ -43,49 +54,33 @@
       <div class="wrap">
         <h2>Por qué usar MueveT</h2>
         <ul class="feature-list">
-          <li>
-            <span class="feature-icon">⏰</span>
-            <strong>Recordatorios a tu medida</strong> — Horario laboral, días de la semana e intervalo en minutos (por ejemplo cada 45 min).
-          </li>
-          <li>
-            <span class="feature-icon">🧘</span>
-            <strong>Ejercicios claros</strong> — Estiramientos, sentadillas, caminar, rotación de muñecas, mirar a lo lejos, respiración… Con postura (sentado/de pie) y tiempo de ejecución.
-          </li>
-          <li>
-            <span class="feature-icon">📌</span>
-            <strong>Funciona en segundo plano</strong> — Minimiza a la bandeja del sistema; las alertas siguen saliendo. Doble clic en el icono para volver a abrir.
-          </li>
-          <li>
-            <span class="feature-icon">🖥️</span>
-            <strong>Solo Windows, sin instalador</strong> — Un solo .exe. La configuración se guarda junto al programa.
-          </li>
+          <li><span class="feature-icon">⏰</span> <strong>Recordatorios a tu medida</strong> — Horario laboral, días e intervalo en minutos.</li>
+          <li><span class="feature-icon">🧘</span> <strong>Ejercicios claros</strong> — Estiramientos, sentadillas, caminar, rotación de muñecas… Con postura y tiempo.</li>
+          <li><span class="feature-icon">📌</span> <strong>Funciona en segundo plano</strong> — Minimiza a la bandeja; las alertas siguen. Doble clic en el icono para abrir.</li>
+          <li><span class="feature-icon">🖥️</span> <strong>Windows, sin instalador</strong> — Un .exe. Español, English, 中文.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Segunda zona de publicidad (opcional) -->
     <aside class="ad-slot ad-slot--secondary" aria-label="Publicidad">
-      <div class="ad-inner">
-        <p class="ad-placeholder">Espacio publicitario</p>
-      </div>
+      <div class="ad-inner"><p class="ad-placeholder">Espacio publicitario</p></div>
     </aside>
 
     <section id="descargar" class="download">
       <div class="wrap">
         <h2>Descargar MueveT</h2>
-        <p>Gratis. Sin cuenta. Para Windows 10/11 (64 bits).</p>
+        <p>Gratis. Sin cuenta. Windows 10/11 (64 bits).</p>
         <a href="MueveT.exe" class="btn btn-download" download>Descargar MueveT.exe</a>
-        <p class="download-note">Al ejecutar, Windows puede mostrar una advertencia de SmartScreen la primera vez (es normal en apps sin firma). Puedes usar “Más información” → “Ejecutar de todas formas”.</p>
+        <p class="download-note">Windows puede mostrar advertencia de SmartScreen la primera vez. «Más información» → «Ejecutar de todas formas».</p>
       </div>
     </section>
 
     <footer class="footer">
       <div class="wrap">
-        <p>MueveT — Recordatorio de salud laboral. Hecho con Python y customtkinter.</p>
+        <p>MueveT — Recordatorio de salud laboral. Español · English · 中文.</p>
       </div>
     </footer>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
